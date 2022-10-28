@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
   const form = document.getElementById("numbers");
   form.addEventListener("submit", robohood);
 
-});
+
 
 let newArray = []
 let stApart = parseInt("input#input1");
@@ -32,12 +32,7 @@ let output1 = newArray.join().toString()
 
  
 //----------------------//-----------------//----------------//--------------//--------------//
-window.addEventListener("load", function() {
 
-  const form = document.getElementById("numbers");
-  form.addEventListener("submit", robohood);
-
-});
 
 document.getElementById("output") = (output1)
 
@@ -45,7 +40,7 @@ function robohood(event) {
   event.preventDefault();
 }
 
-
+});
 
 
 
