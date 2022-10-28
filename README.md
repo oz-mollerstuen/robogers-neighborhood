@@ -22,3 +22,9 @@ Code: function wordRedo(element)
     const element = i.toString();
   
 Expected output: find all 1,2,&3s
+
+Describe: join, to string
+
+Test: it should change the array to a joined string
+Code:const output1 = newArray.join().toString()  
+Expected output: all elements of the array will now be a string

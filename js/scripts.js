@@ -1,21 +1,12 @@
-window.addEventListener("load", function() {
-
-  const form = document.getElementById("numbers");
-  form.addEventListener("submit", robohood);
-
-});
 
 let newArray = []
-let stApart = document.querySelector("input#input1")
-function robohood(event) {
-  event.preventDefault();
-}
+let stApart = parseInt("input#input1");
 
-function wordRedo(element)
-  for (let i = 0; i <= stApart; i++) {
+function wordRedo(element) {
+  for (i = 0; i <= stApart; i++) {
     const element = i.toString();
     if (element.includes(3)) {
-      newArray.push("Won't you be my...error...neighbor?");
+      newArray.push("Won't *zap* you be my...error...neighbor?");
     }
     else if (element.includes(2)) {
       newArray.push("Boop!");
@@ -27,12 +18,27 @@ function wordRedo(element)
       newArray.push(element);
     }
     return newArray
-    }
     
-
-
-
-
-
+  }
 }
+const output1 = newArray.join().toString()
+
+ 
+//----------------------//-----------------//----------------//--------------//--------------//
+window.addEventListener("load", function() {
+
+  const form = document.getElementById("numbers");
+  form.addEventListener("submit", robohood);
+
+});
+
+
+
+function robohood(event) {
+  event.preventDefault();
+}
+
+
+
+
 
