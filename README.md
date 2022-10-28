@@ -14,9 +14,11 @@ Code: window.addEventListener("load", function() {
   });
 Expected Output: will gather input
 
-Describe: function wordArrau
+Describe: function wordredo
 
 Test: it should find each number to change
-Code: 
+Code: function wordRedo(element)
+  for (let i = 0; i <= stApart; i++) {
+    const element = i.toString();
   
 Expected output: find all 1,2,&3s
