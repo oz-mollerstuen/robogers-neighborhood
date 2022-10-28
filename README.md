@@ -14,6 +14,14 @@ Code: window.addEventListener("load", function() {
   });
 Expected Output: will gather input
 
+Test: Combine event listeners
+Code: window.addEventListener("load", function(event) {
+  event.preventDefault();
+  const form = document.getElementById("numbers");
+  form.addEventListener("submit", wordRedo);
+  });
+Expected output: Will stop constant refresh
+
 Describe: function wordredo
 
 Test: it should find each number to change

@@ -1,11 +1,24 @@
 
+window.addEventListener("load", function(event) {
+  event.preventDefault();
+  const form = document.getElementById("numbers");
+  form.addEventListener("submit", wordRedo);
+  });
 
- 
 
+//const button = document.querySelector("#button");
+//button.addEventListener("submit", clickhandler);
+//function clickhandler(event) {
+//console.log("Button Clicked");
+//}
+
+
+//----------------------//-----------------//----------------//--------------//--------------//
 
 let newArray = []
-let stApart = parseInt(document.querySelector("input#input1"));
+let stApart = document.querySelector("#input1");
 function wordRedo(element) {
+  console.log("ffs");
   for (i = 0; i <= stApart; i++) {
     const element = i.toString();
     if (element.includes(3)) {
@@ -26,21 +39,5 @@ function wordRedo(element) {
 }
  
 let output1 = document.getElementById("output")
- 
-//----------------------//-----------------//----------------//--------------//--------------//
-
-let form = document.getElementById("numbers");
 output1 = newArray
- form.addEventListener("submit", function(){
-
- });
-
-form.addEventListener("load", function() {
-  function robohood(event) {
-    event.preventDefault();
-  }
-
-});
-
-
 
