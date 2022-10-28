@@ -1,7 +1,14 @@
 
+window.addEventListener("load", function() {
+
+  const form = document.getElementById("numbers");
+  form.addEventListener("submit", robohood);
+
+});
+
 let newArray = []
 let stApart = parseInt("input#input1");
-
+console.log(stApart)
 function wordRedo(element) {
   for (i = 0; i <= stApart; i++) {
     const element = i.toString();
@@ -21,7 +28,7 @@ function wordRedo(element) {
     
   }
 }
-const output1 = newArray.join().toString()
+let output1 = newArray.join().toString()
 
  
 //----------------------//-----------------//----------------//--------------//--------------//
@@ -32,7 +39,7 @@ window.addEventListener("load", function() {
 
 });
 
-
+document.getElementById("output") = (output1)
 
 function robohood(event) {
   event.preventDefault();
