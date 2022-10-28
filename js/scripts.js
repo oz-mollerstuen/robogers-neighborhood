@@ -1,9 +1,6 @@
-
-window.addEventListener("load", function() {
-
-  const form = document.getElementById("numbers");
-  form.addEventListener("submit", robohood);
-
+  
+  //form.addEventListener("submit", robohood);
+  let form = document.getElementById("numbers");
 
 
 let newArray = []
@@ -34,11 +31,12 @@ let output1 = newArray.join().toString()
 //----------------------//-----------------//----------------//--------------//--------------//
 
 
-document.getElementById("output") = (output1)
+ output1 = document.getElementsByTagName("p#output").innerText
 
-function robohood(event) {
-  event.preventDefault();
-}
+window.addEventListener("load", function() {
+  function prevent(event) {
+    event.preventDefault();
+  }
 
 });
 
