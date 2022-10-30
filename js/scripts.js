@@ -14,44 +14,33 @@ window.addEventListener("load", function(event) {
 
 
 //----------------------//-----------------//----------------//--------------//--------------//
-let newArray = [];
 
 
 function wordRedo(event) {
   event.preventDefault();
-
-  let stApart = document.querySelector("input#input1").value;
-  stApart = stApart.toString().split(" ");
-
-  for (let i = 0; i <= stApart; i++) {
-    //console.log(stApart[i]);
-    //const element = i.toString();
-   
-    if (stApart[i] == 3) {
-      console.log('it has a 3');
+  let newArray = [];
+  let input2 = document.querySelector("input#input1").value;
+  for (let i = 0; i < input2.length; i++) {
+    if (input2[i] == 3) {
+    //  console.log('it has a 3');
       newArray.push("Won't *zap* you be my...error...neighbor?");
     }
-    else if (stApart[i] == 2) {
-      console.log('it has a 2');
+    else if (input2[i] == 2) {
+     // console.log('it has a 2');
       newArray.push("Boop!");
     }
-    else if (stApart[i] == 1) {
-      console.log('it has a 1');
+    else if (input2[i] == 1) {
+     // console.log('it has a 1');
       newArray.push("Beep?");
     }
+    else if (input2[i] == 6) {
+     newArray.push("Execute order 66 ");
+     }
     else {
-      newArray.push(stApart[i]);
-      
+      newArray.push(input2[i]);
     }
-    let output1 = document.getElementById("p#output")
-    output1 = newArray.toString
-
   }
-      console.log(newArray);
+  document.getElementById("output").innerText = newArray.join(", ");
+  document.getElementById("proc").innerText = "It's a beautiful...critical error...in this neighborhood";
 }
- 
 
-//}
- 
-  
-  

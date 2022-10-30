@@ -1,0 +1,37 @@
+h1 {
+ color: blue;
+ background-color: rgb(204, 50, 189);
+ font-family:monospace ;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+em {
+  color: darkkhaki;
+  font-family: monospace;
+}
+
+h2 {
+  background-color: darkorchid;
+  color: darksalmon;
+}
+
+p {
+  padding: 10%;
+  color: rgb(73, 12, 12);
+}
+
+.word {
+  margin: auto;
+  color: rgba(245, 0, 209, 0.314);
+  font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+p1 { 
+  font-weight: bolder;
+  color: rgb(111, 102, 105);
+  font-family: monospace;
+}

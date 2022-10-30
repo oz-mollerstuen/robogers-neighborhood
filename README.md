@@ -1,8 +1,9 @@
 # _Mr Robogers Neighborhood_
 
-#### By _**Lucas Mollerstuen**_
+#### By: 
+## Lucas Mollerstuen
 
-#### _{Brief description of application}_
+#### _An application to convert a select amount of numbers into words or phrases_
 
 ## Technologies Used
 
@@ -12,18 +13,15 @@
 * Bootstrap
 
 ## Description
-
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
-
+#### _using a for loop incombination with if/else if statements this program is made to take a string of numbers, converting them into an array, and cycling through them to pick out the ones, twos, and three. Each pre-selected number is then transmuted into either a 'Beep', 'Boop', or 'Won't you be my neighbor' through the magic of Mr Radgers (but mainly: if (input2[i] == 3) {newArray.push(" Won't *zap* you be my...error...neighbor?");) The array is then presented back to the user with the refined style of a broken robot version of Mr Rodgers_
+__
 ## Setup/Installation Requirements
 
-Install from github and open index
+### Install from github (https://github.com/oz-mollerstuen/robogers-neighborhood.git) and open index.html.
+#### Alternitively visit https://oz-mollerstuen.github.io/robogers-neighborhood
   
-## Known Bugs
+### No known bugs
 
-* Loop does not work, this is a work in progress _
-
-## License
 ## Copyright (c) 2002, Lucas Mollerstuen
 
 ## Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -48,7 +46,7 @@ Install from github and open index
 
 
 
-Describe: stApart
+``` Describe: stApart
 
 Test: it should take the code and put it into an array
 Code: let str = document.getElementById("input")
@@ -86,3 +84,32 @@ Describe: join, to string
 Test: it should change the array to a joined string
 Code:const output1 = newArray.join().toString()  
 Expected output: all elements of the array will now be a string
+
+Describe: For() loop
+
+Test: it should remove function and change variables
+Code: for (let i = 0; i < input2.length; i++) {
+Expected Output: it should actually capture the correct numbers in the array
+
+Test: It should put words in the array
+Code: newArray.push("beep")
+Expected Output: "beep"
+
+Test: It should output the correct numbers in the array if not 1,2,3
+Code: newArray.push(input2[i]);
+Expected Output: Beep, Boop, 4, 5
+
+Describe: Second for loop
+
+Test: It should not work if a letter is entered
+Code: if (input[i].includes())
+Expected Output: Break the loop if letters are present
+
+result is incorrect, saving for memory purposes, need to study further.
+
+Test: It should add one more number to track
+Code:   else if (input2[i] == 6) {
+     newArray.push("Execute order 66. FOR THE EMPIRE!");
+     }
+Expected Output: Set the clones on the jedi commanders.
+
